@@ -73,10 +73,10 @@ h1 {
 
 @keyframes snowfall {
   0% {
-    transform: translate3d(0, -20, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(0, 110vh, 0);
+    transform: translate3d(0, 180vh, 0);
   }
 }
 

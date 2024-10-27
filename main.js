@@ -1,4 +1,4 @@
-var n = 5;
+var n = parseInt(prompt("Enter a number"));
 
 const body = document.querySelector("body");
 width = window.innerWidth;

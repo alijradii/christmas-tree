@@ -1,0 +1,92 @@
+* {
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(18, 18, 18);
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(#0f0c24, #111);
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: rgb(240, 240, 240);
+  text-align: center;
+
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 0;
+  font-family: "Space mono";
+}
+
+@keyframes starAnimation {
+  0% {
+    color: red;
+    opacity: 0.5;
+    text-shadow: 0 0 10px rgba(100, 0, 0, 100);
+  }
+  50% {
+    color: white;
+    opacity: 0.5;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 100);
+  }
+  100% {
+    color: red;
+    opacity: 0.5;
+    text-shadow: 0 0 10px rgba(100, 0, 0, 100);
+  }
+}
+
+@keyframes branchAnimation {
+  0% {
+    text-shadow: 0 0 0 black;
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 100);
+  }
+  100% {
+    text-shadow: 0 0 0 black;
+  }
+}
+
+.star {
+  opacity: 0.5;
+  animation: starAnimation 2s infinite;
+}
+
+.branch {
+  color: green;
+  animation: branchAnimation 3s infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(0, -20, 0);
+  }
+  100% {
+    transform: translate3d(0, 110vh, 0);
+  }
+}
+
+.snow {
+  top: -400px;
+  width: 1vw;
+  height: 1vw;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 20%;
+  animation: snowfall 10s linear infinite;
+}
